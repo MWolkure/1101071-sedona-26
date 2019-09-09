@@ -4,59 +4,71 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
-	<header>
+   <header>
   		<nav>
-  		<ul>
+  		 <ul>
   			<li><a href=""> Информация</a> </li>
   			<li><a href=""> Фото и видео</a> </li>
-  			<li><!-- логотип? --> </li> 
   			<li><a href=""> Карта штата</a> </li>
   			<li><a href=""> Гостиницы </a></li>
-  		</ul>	
+  		 </ul>	
   		</nav>
-  	 <a href="index.html"> <img src="https://via.placeholder.com/150x100" alt="Это треугольный логотип Седоны"> </a>
-		
-  	</header>
-   <main> 
-    <section> 
-     <img src="https://via.placeholder.com/150x100" alt="Гостиница от 4000 Р."> 
-     <h2>Amara resort and spa</h2> 
-     <p>Гостиница от 4000 Р.</p>
-     <button> Подробнее</button> 
-     <button> Забронировать</button> 
-     <img src="https://via.placeholder.com/150x100" alt="Четыре звезды"> 
-     <p> Рейтинг: 8,5 </p>
-    </section>
+  	 <a href="index.html"> <img src="https://via.placeholder.com/150x100" alt="Это треугольный логотип Седоны"> </a>	
+   </header>
 
-    <section> 
-     <img src="https://via.placeholder.com/150x100" alt="Мотель от 3000 Р."> 
-     <h2>Desert quail inn</h2>
-     <p>Мотель от 3000 Р.</p>
-     <button> Подробнее</button> 
-     <button> Забронировать</button> 
-     <img src="https://via.placeholder.com/150x100" alt="Три звезды"> 
-     <p>Рейтинг: 8,9</p>
-    </section> 
+    <main> 
+     <section class="search-results"> 
+      <h2 class="visually-hidden">Результаты поиска</h2>
+      <ul class="results-list">
+        <li class="search-result">
+         <img src="https://via.placeholder.com/150x100" alt="Гостиница от 4000 Р."> 
+         <h2 href="">Amara resort and spa</h2> 
+         <p class="type">Гостиница </p>
+         <p class="type price"> от 4000 Р.</p>
+         <a class="blue" href=""> Подробнее</a> 
+         <a class="brown" href=""> Забронировать</a> 
+         <img src="https://via.placeholder.com/150x100" alt="Четыре звезды"> 
+         <p class="type rating"> Рейтинг: 8,5 </p>
+        </li>
 
-    <section> 
-     <img src="https://via.placeholder.com/150x100" alt="Апартаменты от 2000 Р.">
-     <h2>Villas at poco diablo</h2>    
-     <p>Апартаменты от 2000 Р.</p>
-     <button> Подробнее</button> 
-     <button> Забронировать</button> 
-     <img src="https://via.placeholder.com/150x100" alt="Две звезды"> 
-     <p>Рейтинг: 9,2</p>
-    </section> 
+        <li class="search-result">
+         <img src="https://via.placeholder.com/150x100" alt="Мотель от 3000 Р."> 
+         <h2 href="">Desert quail inn</h2>
+         <p class="type">Мотель</p>
+         <p class="type price"> от 3000 Р.</p>
+         <a class="blue" href=""> Подробнее</a> 
+         <a class="brown" href=""> Забронировать</a> 
+         <img src="https://via.placeholder.com/150x100" alt="Три звезды"> 
+         <p class="type rating">Рейтинг: 8,9</p>
+        </li>
+     
+        <li class="search-result">
+         <img src="https://via.placeholder.com/150x100" alt="Апартаменты от 2000 Р.">
+         <h2 href="">Villas at poco diablo</h2>    
+         <p class="type">Апартаменты</p>
+         <p class="type price"> от 2000 Р.</p>
+         <a class="blue" href=""> Подробнее</a> 
+         <a class="brown" href=""> Забронировать</a> 
+         <img src="https://via.placeholder.com/150x100" alt="Две звезды"> 
+         <p class="type rating">Рейтинг: 9,2</p>
+        </li>
+      </ul>
+     </section> 
    </main>
 
+   <footer>
+      <p class="hashtag"> #VisitSedona </p>
 
- <footer>
-   <a href=""> <img src="https://via.placeholder.com/150x100" alt="Хэштег Приезжайте в Седону"> </a>
-   <a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Твиттера"> </a>
-   <a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Фэйсбука"> </a>
-   <a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Ютуба"> </a>
-   <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="https://via.placeholder.com/150x100" alt="Логотип Академии"> </a>
- </footer>
+      <ul class="networks">
+       <li><a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Твиттера"> </a></li>
+       <li><a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Фэйсбука"> </a></li>
+       <li><a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Ютуба"> </a></li>
+      </ul>
+
+      <p class="academy"> Website by </p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="https://via.placeholder.com/150x100" alt="Логотип Академии"> </a>    
+    </footer>
   </body>
 </html>
