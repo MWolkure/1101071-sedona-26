@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  <body> 
-  	<header>
-  		<nav>
-  		 <ul>
-  			<li><a href=""> Информация </a> </li>
-  			<li><a href=""> Фото и видео </a> </li>
-  			<li><a href=""> Карта штата	</a> </li>
-  			<li><a href="hotels.html"> Гостиницы </a></li>
-  		 </ul>	
-  		</nav>
-  	 <a><img src="https://via.placeholder.com/150x100" alt="Это треугольный логотип Седоны"></a>		
-  	</header>
+<body> 
+ <header>
+  <nav>
+   <ul>
+     <li><a href=""> Информация </a> </li>
+     <li><a href=""> Фото и видео </a> </li>
+     <li><a href=""> Карта штата	</a> </li>
+     <li><a href="hotels.html"> Гостиницы </a></li>
+   </ul>	
+ </nav>
+ <a><img src="img/logo-sedona.svg" alt="Логотип Седоны"></a>		
+</header>
 
-  	<main> 
-  	 <section class="intro">
-  		<img src="https://via.placeholder.com/150x100" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-     </section>
+<main> 
+  <section class="intro">
+    <img src="img/intro-welcome.svg" alt="Welcome to the gorgeous Sedona">
+  </section>
 
-     <section class="advantages">
-  		<h1> Седона - небольшой городок в Аризоне, заслуживающий большего! </h1>
-  		<p> Рассмотрим 5 причин, по которым Седона круче. чем Гранд каньон! </p>
-<!--потом
-ТУТ СПИСОК 
- -->
-  	 </section>	
+  <section class="advantages">
+    <h1 class="black-h"> Седона - небольшой городок в Аризоне, заслуживающий большего! </h1>
+    <p class="black-t"> Рассмотрим 5 причин, по которым Седона круче. чем Гранд каньон! </p>
+    <ul class="sedona-description">
+      <li class="white-t"><span class="white-h">Настоящий городок</span> <br> - №1 - <br> Седона - не аттракцион для туристов,<br>там течёт своя жизнь</li>
+      <li>
+        <ul class="advantages-mini">
+          <li class="black-t"><span class="black-h">Жилье</span><br> Рекомендуем пожить в настоящем мотеле, все как в кино!</li>
+          <li class="black-t"><span class="black-h">Еда</span><br>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
+          <li class="black-t"><span class="black-h">Сувениры</span><br>Не только китайского, но и местного производства!</li>
+        </ul> 
+      </li>
+      <li class="white-t"><span class="white-h">Там есть мост дьявола</span><br>- №2 -<br>Да, по нему можно пройти! Если конечно вы осмелитесь</li>
+      <li class="black-t"><span class="black-h">Небольшая площадь</span><br>- №3 -<br>Все достопримечательности находятся очень близко</li>
+      <li class="black-t"><span class="black-h">Красивая дорога</span><br>- №4 -<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</li>
+      <li class="black-t"><span class="black-h">Мало туристов</span><br>- №5 -<br>Большинство едет в Гранд Каньон и толпится там</li>
+    </ul>
+  </section>	
 
-<!-- потом
+  <section class="choose-input">
+    <p class="choose"> Заинтересовались? </p> 
+    <p class="black-t">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
 
+    <button class="search" class="white-h"> Поиск гостиницы в Седоне </button>
+    ТУТ ВЫПАДАЮЩЕЕ ПОЛЕ
 
+    <a href="hotels.html" class="white-h" class="blue-big"> Найти </a>
+    
+  </section>	
+  
 
-  	 <section>
-  		<p class="choose"> Заинтересовались? </p> 
-  		<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+</main>
 
-  	    <button> Поиск гостиницы в Седоне </button>
+<footer>
+  <p class="hashtag"> #VisitSedona </p>
 
-  	  ТУТ КАРТА 
-  		
-  	 </section>	
-  -->
+  <ul class="networks">
+   <li><a href=""> <img src="img/twitter.svg" alt="Логотип Твиттера"> </a></li>
+   <li><a href=""> <img src="img/fb-icon.svg" alt="Логотип Фэйсбука"> </a></li>
+   <li><a href=""> <img src="img/youtube.svg" alt="Логотип Ютуба"> </a></li>
+ </ul>
 
-  	</main>
-
-    <footer>
-      <p class="hashtag"> #VisitSedona </p>
-
-      <ul class="networks">
-       <li><a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Твиттера"> </a></li>
-       <li><a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Фэйсбука"> </a></li>
-       <li><a href=""> <img src="https://via.placeholder.com/150x100" alt="Логотип Ютуба"> </a></li>
-      </ul>
-
-      <p class="academy"> Website by </p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="https://via.placeholder.com/150x100" alt="Логотип Академии"> </a>    
-    </footer>
-
-  </body>
+ <p class="academy"> Website by </p>
+ <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" alt="Логотип Академии"> </a>    
+</footer>
+</body>
 </html>
