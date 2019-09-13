@@ -19,48 +19,60 @@
 </header>
 
 <main>
-  <section class="up">
+  <section class="choose-housing">
     <form>
+      <p class="housing-headline">Инфраструктура:</p>
       <label>
-        <p class="white-h">Инфраструктура:</p>
-        <input type="checkbox" name="pool" checked class="white-t">
-        <input type="checkbox" name="parking" class="white-t">
-        <input type="checkbox" name="wi-fi" class="white-t">          
+        Бассейн
+        <input type="checkbox" name="pool" checked>
       </label>
+      <label>
+        Парковка
+        <input type="checkbox" name="parking">
+      </label>
+      <label>
+        Wi-fi
+        <input type="checkbox" name="wi-fi">
+      </label>         
 
+      <p class="housing-headline">Тип жилья:</p>
       <label>
-        <p class="white-h">Тип жилья:</p>
-        <input type="checkbox" name="hotel" checked class="white-t">
-        <input type="checkbox" name="motel" checked class="white-t">
-        <input type="checkbox" name="apart" checked class="white-t">
+        Гостиница
+        <input type="checkbox" name="hotel" checked>
       </label>
+      <label>
+        Мотель
+        <input type="checkbox" name="motel" checked>
+      </label>
+      <label>
+        Апартаменты
+        <input type="checkbox" name="apart" checked>
+      </label>      
     </form>
-  </section>
 
-  <section class="cost">
-    <p class="white-h">Стоимость в сутки (Р):</p>
-    <p class="white-t">от 0 </p>
-    <p class="white-t">до 3000 </p>
+    <p class="housing-headline">Стоимость в сутки (Р):</p>
+    <p >от 0 </p>
+    <p >до 3000 </p>
     
     <form>
       <div>
        <button type="button"><img src="img/filter-button.svg"></button> 
        <button type="button"><img src="img/filter-button.svg"></button> 
      </div>
-     <button type="submit" class="white-t"> Показать </button>
+     <button type="submit" class="btn btn-show"> Показать </button>
    </form>
  </section>
 
- <section class="search-h">
+ <section class="search-head">
   <h2> Найдено:3 </h2>
   <p class=""> Сортировка:</p>
-  <ul>
-    <li class="row-b">По цене</li>
-    <li class="row-w">По типу</li>
-    <li class="row-w">По рейтингу</li>          
-  </ul>
-  <img src="" alt="иконка стрелка вверх">
-  <img src="" alt="иконка стрелка вниз">       
+  <ul class="">
+    <li><button type="button">По цене</button></li>
+    <li><button type="button">По типу</button></li>
+    <li><button type="button">По рейтингу</button></li>            
+    <li class=""><button type="button"><img src="img/icon-down-dir.svg" alt="иконка стрелка вверх"></button></li>
+    <li class=""><button type="button"><img src="img/icon-up-dir.svg" alt="иконка стрелка вниз"></button></li>
+  </ul> 
 </section>
 
 
@@ -70,36 +82,36 @@
   <h2 class="visually-hidden">Результаты поиска</h2>
   <ul class="results-list">
     <li class="search-result">
-     <img src="https://via.placeholder.com/150x100" alt="Гостиница от 4000 Р."> 
-     <h2><a href="">Amara resort and spa</a></h2> 
-     <p class="type">Гостиница </p>
-     <p class="type price"> от 4000 Р.</p>
-     <a class="blue" href="" class="white-h"> Подробнее</a> 
-     <a class="brown" href="" class="white-h"> Забронировать</a> 
+     <img src="img/content-3.png" alt="Гостиница от 4000 Р."> 
+     <h2 class="search-results-headline"><a href="">Amara resort and spa</a></h2> 
+     <p>Гостиница </p>
+     <p> от 4000 Р.</p>
+     <a class="btn btn-details" href="" > Подробнее</a> 
+     <a class="btn btn-reservation" href="" > Забронировать</a> 
      <img src="https://via.placeholder.com/150x100" alt="Четыре звезды"> 
-     <p class="type rating"> Рейтинг: 8,5 </p>
+     <p class="search-result-rating"> Рейтинг: 8,5 </p>
    </li>
 
    <li class="search-result">
-     <img src="https://via.placeholder.com/150x100" alt="Мотель от 3000 Р."> 
-     <h2><a href="">Desert quail inn</a></h2>
-     <p class="type">Мотель</p>
-     <p class="type price"> от 3000 Р.</p>
-     <a class="blue" href="" class="white-h"> Подробнее</a> 
-     <a class="brown" href="" class="white-h"> Забронировать</a> 
+     <img src="img/content-4.png" alt="Мотель от 3000 Р."> 
+     <h2 class="search-results-headline"><a href="">Desert quail inn</a></h2>
+     <p>Мотель</p>
+     <p> от 3000 Р.</p>
+     <a class="btn btn-details" href="" > Подробнее</a> 
+     <a class="btn btn-reservation" href="" > Забронировать</a> 
      <img src="https://via.placeholder.com/150x100" alt="Три звезды"> 
-     <p class="type rating">Рейтинг: 8,9</p>
+     <p class="search-result-rating">Рейтинг: 8,9</p>
    </li>
    
    <li class="search-result">
-     <img src="https://via.placeholder.com/150x100" alt="Апартаменты от 2000 Р.">
-     <h2><a href="">Villas at poco diablo</a></h2>    
-     <p class="type">Апартаменты</p>
-     <p class="type price"> от 2000 Р.</p>
-     <a class="blue" href="" class="white-h"> Подробнее</a> 
-     <a class="brown" href="" class="white-h"> Забронировать</a> 
+     <img src="img/content-5.png" alt="Апартаменты от 2000 Р.">
+     <h2 class="search-results-headline"><a href="">Villas at poco diablo</a></h2>    
+     <p>Апартаменты</p>
+     <p> от 2000 Р.</p>
+     <a class="btn btn-details" href="" > Подробнее</a> 
+     <a class="btn btn-reservation" href="" > Забронировать</a> 
      <img src="https://via.placeholder.com/150x100" alt="Две звезды"> 
-     <p class="type rating">Рейтинг: 9,2</p>
+     <p class="search-result-rating">Рейтинг: 9,2</p>
    </li>
  </ul>
 </section> 
