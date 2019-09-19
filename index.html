@@ -53,53 +53,63 @@
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>       
       </li>
-      <li class="advantages-block-last"><p class="advantages-headline">Небольшая площадь</p>
-        <p>Все достопримечательности находятся очень близко</p></li>
-        <li class="advantages-block-last"><p class="advantages-headline">Красивая дорога</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p></li>
-          <li class="advantages-block-last"><p class="advantages-headline">Мало туристов</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p></li>
-          </ol>
-        </section>	
+      <li class="advantages-block-last">
+        <p class="advantages-headline">Небольшая площадь</p>
+        <p>Все достопримечательности находятся очень близко</p>
+      </li>
+        <li class="advantages-block-last">
+          <p class="advantages-headline">Красивая дорога</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="advantages-block-last">
+          <p class="advantages-headline">Мало туристов</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+      </ol>
+  </section>	
 
-        <section class="choose-input">
-          <p class="choose"> Заинтересовались? </p> 
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+  <section class="choose-input">
+   <p class="choose"> Заинтересовались? </p> 
+   <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне </p>
 
+     <button type="button" class="btn btn-choose-date"> Поиск гостиницы в Седоне </button>
 
-          <button type="button" class="btn btn-choose-date"> Поиск гостиницы в Седоне </button>
+      <form class="search-form">
+        <div class="">
+         <label for="date-1">Дата заезда:</label>
+          <input type="text" value="24 апреля 2017" id="date-1">          
+          <button type="button" class="">
+            <img src="img/calendar.svg" alt="Выбор даты заезда">
+          </button>
+        </div>
 
-          <form>
-           <label>Дата заезда:
-            <input type="text" name="" value="24 апреля 2017" >
-          </label>
-          <button type="button" class=""><img src="img/calendar.svg" alt="Выбор даты заезда"></button>
+         <label for="date-2">Дата выезда:</label>
+          <div class="">
+           <input type="text" value="4 июля 2017" id="date-2">           
+           <button type="button" class="">
+            <img src="img/calendar.svg" alt="Выбор даты выезда">
+           </button>
+          </div>
 
-          <label>Дата выезда:
-            <input type="text" name="" value="4 июля 2017"> 
-          </label>
-          <button type="button" class=""><img src="img/calendar.svg" alt="Выбор даты выезда"></button>
+          <label for="adults">Взрослые:</label>
+           <div class="">
+            <button type="button" class="btn btn-minus" id="adults"> - </button>
+            <input type="text" value="2" id="adults">
+            <button type="button" class="btn btn-plus" id="adults"> + </button>
+           </div>
 
-          <label>Взрослые:
-            <button type="button" class="btn btn-minus"> - </button>
-            <input type="text" value="2">
-            <button type="button" class="btn btn-plus"> + </button>
-          </label>
-
-          <label> Дети:
-            <button type="button" class="btn btn-minus"> - </button>
-            <input type="text" value="0">
-            <button type="button" class="btn btn-plus"> + </button>
-          </label>
+          <label for="children"> Дети: </label>
+           <div class="">
+            <button type="button" class="btn btn-minus" id="children"> - </button>
+            <input type="text" value="0" id="children">
+            <button type="button" class="btn btn-plus" id="children"> + </button>  
+           </div>
           <button type="submit" class="btn btn-search"> Найти </button>
-        </form>
+      </form>
 
-        <img src="img/map.jpg" class="map" alt="Карта">
-
-      </section>	
-
-
-    </main>
+      <img src="img/map.jpg" class="map" alt="Карта">
+  </section>	
+</main>
 
     <footer>
       <p class="hashtag"> #VisitSedona </p>
