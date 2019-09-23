@@ -3,20 +3,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet"  href="fonts">
+  <link rel="stylesheet"  href="css/style.css">
+  <link rel="stylesheet"  href="css/normalize.css">
 </head>
 
 <body> 
  <header>
-  <nav>
-   <ul>
-     <li><a href=""> Информация </a> </li>
-     <li><a href=""> Фото и видео </a> </li>
-     <li><a href=""> Карта штата	</a> </li>
-     <li><a href="hotels.html"> Гостиницы </a></li>
+  <nav class="main-navigation">
+   <ul class="site-navigation">
+    <li><a href=""> Информация </a> </li>
+    <li><a href=""> Фото и видео </a> </li>
+    <li><a href=""> Карта штата	</a> </li>
+    <li><a href="hotels.html"> Гостиницы </a></li>
    </ul>	
- </nav>
- <a><img src="img/logo-sedona.svg" alt="Логотип Седоны"></a>		
-</header>
+  </nav>
+  <a><img src="img/logo-sedona.svg" alt="Логотип Седоны"></a>		
+ </header>
 
 <main> 
   <section class="intro">
@@ -57,15 +60,15 @@
         <p class="advantages-headline">Небольшая площадь</p>
         <p>Все достопримечательности находятся очень близко</p>
       </li>
-        <li class="advantages-block-last">
-          <p class="advantages-headline">Красивая дорога</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantages-block-last">
-          <p class="advantages-headline">Мало туристов</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ol>
+      <li class="advantages-block-last">
+        <p class="advantages-headline">Красивая дорога</p>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </li>
+      <li class="advantages-block-last">
+        <p class="advantages-headline">Мало туристов</p>
+        <p>Большинство едет в Гранд Каньон и толпится там</p>
+      </li>
+    </ol>
   </section>	
 
   <section class="choose-input">
@@ -74,40 +77,42 @@
 
      <button type="button" class="btn btn-choose-date"> Поиск гостиницы в Седоне </button>
 
-      <form class="search-form">
+    <form class="search-form">
+      <div class="search-form-text">
+       <label for="date-1">Дата заезда:</label>
         <div class="">
-         <label for="date-1">Дата заезда:</label>
-          <input type="text" value="24 апреля 2017" id="date-1">          
+         <input type="text" value="24 апреля 2017" id="date-1">          
+         <button type="button" class="">
+          <img src="img/calendar.svg" alt="Выбор даты заезда">
+         </button>
+        </div>
+
+       <label for="date-2">Дата выезда:</label>
+        <div class="">
+          <input type="text" value="4 июля 2017" id="date-2">           
           <button type="button" class="">
-            <img src="img/calendar.svg" alt="Выбор даты заезда">
+           <img src="img/calendar.svg" alt="Выбор даты выезда">
           </button>
         </div>
 
-         <label for="date-2">Дата выезда:</label>
-          <div class="">
-           <input type="text" value="4 июля 2017" id="date-2">           
-           <button type="button" class="">
-            <img src="img/calendar.svg" alt="Выбор даты выезда">
-           </button>
-          </div>
+        <label for="adults">Взрослые:</label>
+         <div class="">
+          <button type="button" class="btn btn-minus" id="adults"> - </button>
+          <input type="text" value="2" id="adults">
+          <button type="button" class="btn btn-plus" id="adults"> + </button>
+         </div>
 
-          <label for="adults">Взрослые:</label>
-           <div class="">
-            <button type="button" class="btn btn-minus" id="adults"> - </button>
-            <input type="text" value="2" id="adults">
-            <button type="button" class="btn btn-plus" id="adults"> + </button>
-           </div>
+        <label for="children"> Дети: </label>
+         <div class="">
+          <button type="button" class="btn btn-minus" id="children"> - </button>
+          <input type="text" value="0" id="children">
+          <button type="button" class="btn btn-plus" id="children"> + </button>  
+         </div>
+      </div>
+      <button type="submit" class="btn btn-search"> Найти </button>
+    </form>
 
-          <label for="children"> Дети: </label>
-           <div class="">
-            <button type="button" class="btn btn-minus" id="children"> - </button>
-            <input type="text" value="0" id="children">
-            <button type="button" class="btn btn-plus" id="children"> + </button>  
-           </div>
-          <button type="submit" class="btn btn-search"> Найти </button>
-      </form>
-
-      <img src="img/map.jpg" class="map" alt="Карта">
+    <img src="img/map.jpg" class="map" alt="Карта">
   </section>	
 </main>
 
