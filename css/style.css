@@ -15,9 +15,6 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-.nav-element {
-	text-decoration: none;
-}
 .main-navigation,
 .search-form-text {
 	font-weight: bold;
@@ -30,6 +27,7 @@ body {
 .nav-element {
 	color: black;
   font-weight: bold;
+  text-decoration: none;
 }
 h1,
 .advantages-headline,
@@ -99,7 +97,7 @@ h1,
 }
 .intro {
 	background-color: #666666;
-	background-image: url("img/polygon"),
+	background-image: url("img/polygon.jpg"),
   url("img/background-1.jpg");
 }
 .advantages-block {
@@ -112,6 +110,12 @@ h1,
   color:white;
   background-color: #666666;
   background-image: url("img/background-2.jpg");
+}
+.advantages-picture-1 {
+  background-image: url("img/content-1.jpg");                  
+}
+.advantages-picture-2 {
+  background-image:url("img/content-2.jpg");
 }
 
 /*
