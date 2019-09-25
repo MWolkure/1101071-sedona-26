@@ -3,26 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet"  href="css/normalize.css">
 </head>
 
 <body>
   <header>
     <nav class="main-navigation">
      <ul class="site-navigation">
-      <li><a href=""> Информация</a> </li>
-      <li><a href=""> Фото и видео</a> </li>
-      <li><a href=""> Карта штата</a> </li>
-      <li><a href=""> Гостиницы </a></li>
+      <li><a href="" class="nav-element"> Информация</a> </li>
+      <li><a href="" class="nav-element"> Фото и видео</a> </li>
+      <li><a href="" class="nav-element"> Карта штата</a> </li>
+      <li><a href="" class="nav-element"> Гостиницы </a></li>
     </ul>  
   </nav>
-  <a href="index.html"> <img src="img/logo-sedona.svg" alt="Логотип Седоны"> </a>
+  <a href="index.html"> <img src="img/logo-sedona.svg" alt="Логотип Седоны" class="logo"> </a>
 </header>
 
 <main>
   <section class="choose-housing">
     <form>
       <p class="housing-headline">Инфраструктура:</p>
-      <label class="housing-choices">
+      <label>
         Бассейн
         <input type="checkbox" name="pool" checked>
       </label>
@@ -86,8 +87,10 @@
      <p> от 4000 Р.</p>
      <a class="btn btn-details" href="" > Подробнее</a> 
      <a class="btn btn-reservation" href="" > Забронировать</a> 
-     <img src="https://via.placeholder.com/150x100" alt="Четыре звезды"> 
-     <p class="search-result-rating"> Рейтинг: 8,5 </p>
+     <!--"Четыре звезды"> -->
+     <div class="star star-4">
+       <p class="search-result-rating"> Рейтинг: 8,5 </p>
+     </div>
    </li>
 
    <li class="search-result">
@@ -97,8 +100,10 @@
      <p> от 3000 Р.</p>
      <a class="btn btn-details" href="" > Подробнее</a> 
      <a class="btn btn-reservation" href="" > Забронировать</a> 
-     <img src="https://via.placeholder.com/150x100" alt="Три звезды"> 
-     <p class="search-result-rating">Рейтинг: 8,9</p>
+     <!--"Три звезды"> -->
+     <div class="star star-3">
+       <p class="search-result-rating">Рейтинг: 8,9</p>
+     </div>
    </li>
    
    <li class="search-result">
@@ -108,8 +113,10 @@
      <p> от 2000 Р.</p>
      <a class="btn btn-details" href="" > Подробнее</a> 
      <a class="btn btn-reservation" href="" > Забронировать</a> 
-     <img src="https://via.placeholder.com/150x100" alt="Две звезды"> 
-     <p class="search-result-rating">Рейтинг: 9,2</p>
+     <!--"Две звезды"> -->
+     <div class="star star-2">
+       <p class="search-result-rating">Рейтинг: 9,2</p>
+     </div>
    </li>
  </ul>
 </section> 

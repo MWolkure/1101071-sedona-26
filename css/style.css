@@ -1,73 +1,94 @@
+@font-face {
+  font-family: "pt sans";
+  src: url("fonts/ptsans.woff") format("woff"),
+  url("fonts/ptsans.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
 	margin: 0;
 	padding: 0;
-	font-family:"PT Sans";
 	font-size: 13px;
 	text-transform: uppercase;
-    
-    background-color: white;
+  background-color: white;
+  font-family: "pt sans", arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
-a {
+.nav-element {
 	text-decoration: none;
 }
 .main-navigation,
 .search-form-text {
-	font-family: "PT Sans Bold";
+	font-weight: bold;
 	font-size: 14px;
 }
 .site-navigation,
 .advantages-mini {
 	list-style: none;
 }
-.site-navigation a {
+.nav-element {
 	color: black;
+  font-weight: bold;
 }
 h1,
 .advantages-headline,
 .search-results-headline,
 .search-head-result {
-    font-family: "PT Sans Bold";
-    font-size: 21px;
-  }
- .btn-choose-date {
-    font-family: "PT Sans Bold";
-	font-size: 21px;
-    color:white;
-    background-color: saddleBrown;
-  }
-  .btn-search {
-  	font-family: "PT Sans Bold";
-	font-size: 21px;
-    color:white;
-    background-color: lightSkyBlue;
-  }
-  .btn-details {
-    font-family: "PT Sans Bold";
-	font-size: 14px;
-    color:white;
-    background-color: lightSkyBlue;
+  font-weight: bold;
+  font-size: 21px;
 }
-  .btn-reservation {
-    font-family: "PT Sans Bold";
-	font-size: 14px;
-    color:white;
-    background-color: saddleBrown;
-  }
+.btn-choose-date {
+  font-weight: bold;
+  font-size: 21px;
+  color:white;
+  background-color: #766357;
+}
+.btn-search {
+  font-weight: bold;
+  font-size: 21px;
+  color:white;
+  background-color: #81b3d2;
+}
+.btn-details {
+  font-weight: bold;
+  font-size: 14px;
+  color:white;
+  background-color: #81b3d2;
+}
+.btn-reservation {
+  font-weight: bold;
+  font-size: 14px;
+  color:white;
+  background-color: #766357;
+}
+.search-result-rating {
+  background-color: #f2f2f2;
+}
+.star {
+  background-image: url(img/star);
+  background-repeat: repeat-x;
+}
+.star.star-4 {
+  width:80px;
+}
+.star.star-3 {
+  width:60px;
+}
+.star.star-2 {
+  width:40px;
 }
 .choose {
-	font-family: "PT Sans Bold";
+	font-weight: bold;
 	font-size: 30px;
 }
 .advantages-block {
 	color: white;
 }
 .housing-headline {
-	font-family: "PT Sans Bold";
+	font-weight: bold;
 	font-size: 16px;
-    color:white;
-}
-.housing-choices {
-	 color:white;
+  color:white;
 }
 .sorting {
 	font-size: 12px;
@@ -76,23 +97,24 @@ h1,
 	font-size: 12px;
 	color: lightGrey;
 }
-
-
 .intro {
-	background-color: slateGrey;
-	background-image: url("img/background-1.jpg");
-	background-image: url("img/polygon");
+	background-color: #666666;
+	background-image: url("img/polygon"),
+  url("img/background-1.jpg");
 }
 .advantages-block {
-	background-color: lightSkyBlue;
+	background-color: #81b3d2;
 }
 .advantages-block-last{
-	background-color: lightGrey;
+	background-color: #eeeeee;
 }
 .choose-housing {
-	background-color: slateGrey;
-	background-image: url("img/background-2.jpg");
+  color:white;
+  background-color: #666666;
+  background-image: url("img/background-2.jpg");
 }
 
-
-
+/*
+ .logo
+ {background-size: 10% 15%;}
+или ??? ~ 182px 86px
