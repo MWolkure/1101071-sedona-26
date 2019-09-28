@@ -5,12 +5,19 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "pt sans";
+  src: url("fonts/ptsansbold.woff") format("woff"),
+  url("fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 13px;
 	text-transform: uppercase;
-  background-color: white;
+  background-color: #ffffff;
   font-family: "pt sans", arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -29,7 +36,7 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
-h1,
+.advantages-title,
 .advantages-headline,
 .search-results-headline,
 .search-head-result {
@@ -39,32 +46,32 @@ h1,
 .btn-choose-date {
   font-weight: bold;
   font-size: 21px;
-  color:white;
+  color: #ffffff;
   background-color: #766357;
 }
 .btn-search {
   font-weight: bold;
   font-size: 21px;
-  color:white;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 .btn-details {
   font-weight: bold;
   font-size: 14px;
-  color:white;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 .btn-reservation {
   font-weight: bold;
   font-size: 14px;
-  color:white;
+  color: #ffffff;
   background-color: #766357;
 }
 .search-result-rating {
   background-color: #f2f2f2;
 }
 .star {
-  background-image: url(img/star);
+  background-image: url(css/img/star);
   background-repeat: repeat-x;
 }
 .star.star-4 {
@@ -81,24 +88,28 @@ h1,
 	font-size: 30px;
 }
 .advantages-block {
-	color: white;
+	color: #ffffff;
 }
 .housing-headline {
 	font-weight: bold;
 	font-size: 16px;
-  color:white;
+  color: #ffffff;
 }
 .sorting {
 	font-size: 12px;
 }
 .sorting-btn {
 	font-size: 12px;
-	color: lightGrey;
+	color: #bfc4c9;
+}
+.welcome: {
+  height: 350px;
+  width: 460px;
 }
 .intro {
-	background-color: #666666;
-	background-image: url("img/polygon.jpg"),
-  url("img/background-1.jpg");
+	background-color: #bcbcb8;
+	background-image: url("../img/background-1.jpg"), url("../img/polygon.jpg");
+  backgtound-size: ;
 }
 .advantages-block {
 	background-color: #81b3d2;
@@ -107,18 +118,19 @@ h1,
 	background-color: #eeeeee;
 }
 .choose-housing {
-  color:white;
+  color:#ffffff;
   background-color: #666666;
-  background-image: url("img/background-2.jpg");
+  background-image: url("../img/background-2.jpg");
 }
 .advantages-picture-1 {
-  background-image: url("img/content-1.jpg");                  
+  background-image: url("../img/content-1.jpg");                  
 }
 .advantages-picture-2 {
-  background-image:url("img/content-2.jpg");
+  background-image: url("../img/content-2.jpg");
 }
 
 /*
- .logo
- {background-size: 10% 15%;}
-или ??? ~ 182px 86px
+ .logo {
+ height:70px;
+  шир 102px;
+  }
