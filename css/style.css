@@ -110,6 +110,7 @@ body {
 	background-color: #bcbcb8;
 	background-image: url("../img/background-1.jpg"), url("../img/polygon.jpg");
   backgtound-size: ;
+  background-repeat:no-repeat;
 }
 .advantages-block {
 	background-color: #81b3d2;
@@ -121,12 +122,15 @@ body {
   color:#ffffff;
   background-color: #666666;
   background-image: url("../img/background-2.jpg");
+  background-repeat:no-repeat;
 }
 .advantages-picture-1 {
-  background-image: url("../img/content-1.jpg");                  
+  background-image: url("../img/content-1.jpg");  
+  background-repeat:no-repeat;                
 }
 .advantages-picture-2 {
   background-image: url("../img/content-2.jpg");
+  background-repeat:no-repeat;
 }
 
 /*
