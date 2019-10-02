@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -19,22 +19,44 @@ body {
   font-family: "pt sans", arial, sans-serif;
   font-weight: normal;
 }
-.container{
+.main-container{
   background-color: #ffffff;
+  box-sizing: border-box;
+  width: 1200px;
+  /* сделать по центру страницы */
 }
 .main-navigation,
 .search-form-text {
 	font-weight: bold;
 	font-size: 14px;
 }
-.site-navigation,
-.advantages-mini {
-	list-style: none;
-}
 .nav-element {
-	color: black;
+  color: black;
   font-weight: bold;
   text-decoration: none;
+}
+.site-navigation {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+ .logo {
+  height: 70px;
+  width: 102px;
+}
+.advantages-mini {
+	list-style: none;
+  display: flex;
+}
+.layout-block-last {
+  display: flex;
+}
+.layout-advantages-1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.layout-advantages-2 {
+  display: flex;
 }
 .advantages-title,
 .advantages-headline,
@@ -42,6 +64,31 @@ body {
 .search-head-result {
   font-weight: bold;
   font-size: 21px;
+}
+.search-results-headline {
+  text-decoration: none;
+}
+.search-head {
+  display: flex;
+}
+.layout-sorting,
+.sorting-list,
+.layout-icons-up-down {
+  display: flex;
+}
+/* это нужно, или нет?
+.results-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+*/
+.search-result {
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
 }
 .btn-choose-date {
   font-weight: bold;
@@ -90,51 +137,101 @@ body {
 .advantages-block {
 	color: #ffffff;
 }
-.housing-headline {
-	font-weight: bold;
-	font-size: 16px;
-  color: #ffffff;
-}
 .sorting {
 	font-size: 12px;
+}
+.sorting-list {
+  list-style:none; 
 }
 .sorting-btn {
 	font-size: 12px;
 	color: #bfc4c9;
 }
-.welcome: {
-  height: 350px;
-  width: 460px;
-}
 .intro {
 	background-color: #bcbcb8;
-	background-image: url("../img/background-1.jpg"), url("../img/polygon.jpg");
-  backgtound-size: ;
+	background-image: url("../img/background-1.jpg");
+  max-width:100%;
+  height:auto;
   background-repeat:no-repeat;
+}
+.intro-mask {
+  background-image: url("../img/intro-mask.svg");
+  background-repeat:no-repeat;
+  background-position: center bottom;
+  /* убрать границу под белым */
+}
+.welcome {
+  height: 350px;
+  width: 460px;
+  margin: 80px 370px auto; 
+}
+.advantages-icon {
+
+}
+.advantages-icon .icon-1 {
+  background-image: url("../img/icon-1.svg");
+}
+.advantages-icon .icon-2 {
+  background-image: url("../img/icon-2.svg");
+}
+.advantages-icon .icon-3 {
+  background-image: url("../img/icon-3.svg");
 }
 .advantages-block {
 	background-color: #81b3d2;
+  background-size: 400px 255px; /*почему не работает?? */
+
 }
-.advantages-block-last{
+.advantages-block-last {
 	background-color: #eeeeee;
+}
+.housing-headline {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
 }
 .choose-housing {
   color:#ffffff;
   background-color: #666666;
   background-image: url("../img/background-2.jpg");
-  background-repeat:no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+.layout-housing-main {
+  display: flex;
+}
+.layout-housing-1,
+.layout-housing-2 {
+  display: flex;
+  flex-direction: column;
+}
+.layout-housing-3 {
+  display: flex;
+  flex-direction: column;
 }
 .advantages-picture-1 {
-  background-image: url("../img/content-1.jpg");  
-  background-repeat:no-repeat;                
+  background-repeat: no-repeat;                
 }
 .advantages-picture-2 {
-  background-image: url("../img/content-2.jpg");
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+}
+.networks-icon {
+  background-color: #81b3d2;
+  background-size: 50px 50px; /* почему такие маленькие отображаются?*/
+}
+.layout-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.networks {
+  list-style: none; 
+  display: flex;
+  
+  }
+.layout-dev {
+  display: flex;
 }
 
-/*
- .logo {
- height:70px;
-  шир 102px;
-  }
+
+

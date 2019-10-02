@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="main-container">
   <header>
     <nav class="main-navigation">
      <ul class="site-navigation">
@@ -16,63 +16,73 @@
       <li><a href="" class="nav-element"> Фото и видео</a> </li>
       <li><a href="" class="nav-element"> Карта штата</a> </li>
       <li><a href="" class="nav-element"> Гостиницы </a></li>
-    </ul>  
-  </nav>
-  <a href="index.html"> <img src="img/logo-sedona.svg" alt="Логотип Седоны" class="logo" width="102px" height="70px"> </a>
-</header>
+     </ul>  
+    </nav>
+    <a href=""><img src="img/logo-sedona.svg" alt="Логотип Седоны" class="logo" width="102px" height="70px"></a>
+  </header>
 <main>
   <section class="choose-housing">
-    <form>
+    <form class="layout-housing-main">
+     <div class="layout-housing-1">
       <p class="housing-headline">Инфраструктура:</p>
       <label>
-        Бассейн
         <input type="checkbox" name="pool" checked>
+        Бассейн
       </label>
       <label>
-        Парковка
         <input type="checkbox" name="parking">
+        Парковка
       </label>
       <label>
-        Wi-fi
         <input type="checkbox" name="wi-fi">
+        Wi-fi
       </label>         
-
-      <p class="housing-headline">Тип жилья:</p>
-      <label>
-        Гостиница
-        <input type="checkbox" name="hotel" checked>
-      </label>
-      <label>
-        Мотель
-        <input type="checkbox" name="motel" checked>
-      </label>
-      <label>
-        Апартаменты
-        <input type="checkbox" name="apart" checked>
-      </label>      
-    
-    <p class="housing-headline">Стоимость в сутки (Р):</p>
-    <p >от 0 </p>
-    <p >до 3000 </p>
-
-      <div>
-       <button type="button"><img src="img/filter-button.svg"></button> 
-       <button type="button"><img src="img/filter-button.svg"></button> 
      </div>
-     <button type="submit" class="btn btn-show"> Показать </button>
+     <div class="layout-housing-2">
+      <p class="housing-headline">Тип жилья:</p>
+      <label>       
+        <input type="checkbox" name="hotel" checked>
+        Гостиница
+      </label>
+      <label>       
+        <input type="checkbox" name="motel" checked>
+        Мотель
+      </label>
+      <label>       
+        <input type="checkbox" name="apart" checked>
+        Апартаменты
+      </label>   
+     </div>   
+    <div class="layout-housing-3">
+      <p class="housing-headline">Стоимость в сутки (Р):</p>
+      <p >от 0 </p>
+      <p >до 3000 </p>
+
+      <div class="filter-button">
+       <button type="button"><img src="img/filter-button.svg"></button> 
+       <button type="button"><img src="img/filter-button.svg"></button> 
+      </div>
+      <button type="submit" class="btn btn-show"> Показать </button>
+    </div>
    </form>
  </section>
 
  <section class="search-head">
+ <div class="layout-search-head">
   <h2 class="search-head-result"> Найдено:3 </h2>
-  <p class="sorting"> Сортировка:</p>
-  <ul class="">
+ </div>
+  <div class="layout-sorting">
+   <p class="sorting"> Сортировка:</p>
+   <ul class="sorting-list">
     <li><button type="button" class="sorting-btn">По цене</button></li>
     <li><button type="button" class="sorting-btn">По типу</button></li>
-    <li><button type="button" class="sorting-btn">По рейтингу</button></li>            
-    <li class=""><button type="button"><img src="img/icon-down-dir.svg" alt="иконка стрелка вверх"></button></li>
-    <li class=""><button type="button"><img src="img/icon-up-dir.svg" alt="иконка стрелка вниз"></button></li>
-  </ul> 
+    <li><button type="button" class="sorting-btn">По рейтингу</button></li>  
+   </ul>
+  </div>
+   <div class="layout-icons-up-down">
+    <button type="button" class="icon-up"><img src="img/icon-up-dir.svg" alt="стрелка вниз"></button>          
+    <button type="button" class="icon-down"><img src="img/icon-down-dir.svg" alt=" стрелка вверх"></button>
+   </div> 
  </section>
 
 
@@ -82,58 +92,80 @@
   <h2 class="visually-hidden">Результаты поиска</h2>
   <ul class="results-list">
     <li class="search-result">
+    <div class="layout-search-result">
      <img src="img/content-3.jpg" alt="Гостиница от 4000 Р."> 
-     <h2 class="search-results-headline"><a href="">Amara resort and spa</a></h2> 
+     <h2><a href="" class="search-results-headline">Amara resort and spa</a></h2> 
      <p>Гостиница </p>
      <p> от 4000 Р.</p>
      <a class="btn btn-details" href="" > Подробнее</a> 
      <a class="btn btn-reservation" href="" > Забронировать</a> 
+    </div>
      <!--"Четыре звезды"> -->
-     <div class="star star-4">
-       <p class="search-result-rating"> Рейтинг: 8,5 </p>
-     </div>
+    <div class="star star-4">
+     <p class="search-result-rating"> Рейтинг: 8,5 </p>
+    </div>
    </li>
 
    <li class="search-result">
+    <div class="layout-search-result">
      <img src="img/content-4.jpg" alt="Мотель от 3000 Р."> 
-     <h2 class="search-results-headline"><a href="">Desert quail inn</a></h2>
+     <h2><a href="" class="search-results-headline">Desert quail inn</a></h2>
      <p>Мотель</p>
      <p> от 3000 Р.</p>
      <a class="btn btn-details" href="" > Подробнее</a> 
      <a class="btn btn-reservation" href="" > Забронировать</a> 
+    </div>
      <!--"Три звезды"> -->
-     <div class="star star-3">
-       <p class="search-result-rating">Рейтинг: 8,9</p>
-     </div>
+    <div class="star star-3">
+     <p class="search-result-rating">Рейтинг: 8,9</p>
+    </div>
    </li>
    
    <li class="search-result">
+    <div class="layout-search-result">
      <img src="img/content-5.jpg" alt="Апартаменты от 2000 Р.">
-     <h2 class="search-results-headline"><a href="">Villas at poco diablo</a></h2>    
+     <h2><a href="" class="search-results-headline">Villas at poco diablo</a></h2>    
      <p>Апартаменты</p>
      <p> от 2000 Р.</p>
      <a class="btn btn-details" href="" > Подробнее</a> 
      <a class="btn btn-reservation" href="" > Забронировать</a> 
+    </div>
      <!--"Две звезды"> -->
-     <div class="star star-2">
-       <p class="search-result-rating">Рейтинг: 9,2</p>
-     </div>
+    <div class="star star-2">
+     <p class="search-result-rating">Рейтинг: 9,2</p>
+    </div>
    </li>
  </ul>
 </section> 
 </main>
 
 <footer>
-  <p class="hashtag"> #VisitSedona </p>
+  <div class="layout-footer">
+      <p class="hashtag"> #VisitSedona </p>
 
-  <ul class="networks">
-   <li><a href=""> <img src="img/twitter.svg" alt="Логотип Твиттера"> </a></li>
-   <li><a href=""> <img src="img/fb-icon.svg" alt="Логотип Фэйсбука"> </a></li>
-   <li><a href=""> <img src="img/youtube.svg" alt="Логотип Ютуба"> </a></li>
- </ul>
-
- <p class="academy"> Website by </p>
- <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" alt="Логотип Академии"> </a>    
+      <ul class="networks">
+       <li>
+        <a href="" class="networks-icon">
+         <img src="img/twitter.svg" alt="Логотип Твиттера">
+        </a>
+       </li>
+       <li>
+        <a href="" class="networks-icon">
+         <img src="img/fb-icon.svg" alt="Логотип Фэйсбука">
+        </a>
+       </li>
+       <li>
+        <a href="" class="networks-icon">
+         <img src="img/youtube.svg" alt="Логотип Ютуба">
+        </a>
+      </li>
+     </ul>
+     
+     <div class="layout-dev">
+      <p class="dev-text"> Website by </p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" alt="Логотип Академии" width="40px" height="70px"> </a> 
+     </div>  
+    </div>
 </footer>
 </div>
 </body>

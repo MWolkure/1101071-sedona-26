@@ -8,22 +8,24 @@
 </head>
 
 <body> 
-<div class="container">
+<div class="main-container">
  <header>
-  <nav class="main-navigation">
-   <ul class="site-navigation">
-    <li><a href="" class="nav-element"> Информация </a> </li>
-    <li><a href="" class="nav-element"> Фото и видео </a> </li>
-    <li><a href="" class="nav-element"> Карта штата	</a> </li>
-    <li><a href="hotels.html" class="nav-element"> Гостиницы </a></li>
-   </ul>	
-  </nav>
-  <a><img src="img/logo-sedona.svg" alt="Логотип Седоны" class="logo" width="102px" height="70px"></a>		
+   <nav class="main-navigation">
+    <ul class="site-navigation">
+     <li><a href="" class="nav-element"> Информация </a> </li>
+     <li><a href="" class="nav-element"> Фото и видео </a> </li>
+     <li><a href="" class="nav-element"> Карта штата	</a> </li>
+     <li><a href="hotels.html" class="nav-element"> Гостиницы </a></li>
+    </ul>	
+   </nav>
+   <a href=""><img src="img/logo-sedona.svg" alt="Логотип Седоны" class="logo" width="102px" height="70px"></a>
  </header>
 
 <main> 
   <section class="intro">
+   <div class="intro-mask">
     <img src="img/intro-welcome.svg" alt="Welcome to the gorgeous Sedona" class="welcome" height="350" width="460">
+   </div>
   </section>
 
   <section class="sedona-description">
@@ -31,31 +33,50 @@
     <p> Рассмотрим 5 причин, по которым Седона круче. чем Гранд каньон! </p>
 
     <ol class="advantages">
-      <li class="advantages-picture-1">
-        <div class="advantages-block"><p class="advantages-headline">Настоящий городок</p> Седона - не аттракцион для туристов,там течёт своя жизнь
-        </div>   
+      <li>
+       <div class="layout-advantages-1">
+        <div class="advantages-picture-1" >
+         <img src="img/content-1.jpg" width="800px" height="255px">
+        </div>
+        <div class="advantages-block">
+         <p class="advantages-headline">Настоящий городок</p> Седона - не аттракцион для туристов,там течёт своя жизнь
+        </div> 
+       </div>  
 
         <ul class="advantages-mini">
-          <li>          
+          <li> 
+           <div class="advantages-icon icon-1">         
             <p class="advantages-headline">Жилье</p> 
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
+           </div>
           </li>
           <li>
+           <div class="advantages-icon icon-2">
             <p class="advantages-headline">Еда</p>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>           
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+           </div>           
           </li>
           <li>
+           <div class="advantages-icon icon-3">
             <p class="advantages-headline">Сувениры</p>
-            <p>Не только китайского, но и местного производства!</p>        
+            <p>Не только китайского, но и местного производства!</p>   
+           </div>     
           </li>         
         </ul> 
         
       </li>
-      <li class="advantages-picture-2">
-        <div class="advantages-block"><p class="advantages-headline">Там есть мост дьявола</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>       
+      <li>
+       <div class="layout-advantages-2">
+        <div class="advantages-picture-2">
+         <img src="img/content-2.jpg" width="800px" height="255px">
+        </div>
+        <div class="advantages-block">
+         <p class="advantages-headline">Там есть мост дьявола</p>
+         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>  
+       </div>     
       </li>
+    <div class="layout-block-last">
       <li class="advantages-block-last">
         <p class="advantages-headline">Небольшая площадь</p>
         <p>Все достопримечательности находятся очень близко</p>
@@ -68,6 +89,7 @@
         <p class="advantages-headline">Мало туристов</p>
         <p>Большинство едет в Гранд Каньон и толпится там</p>
       </li>
+    </div>
     </ol>
   </section>	
 
@@ -116,17 +138,33 @@
   </section>	
 </main>
 
-    <footer>
+   <footer>
+    <div class="layout-footer">
       <p class="hashtag"> #VisitSedona </p>
 
       <ul class="networks">
-       <li><a href=""> <img src="img/twitter.svg" alt="Логотип Твиттера"> </a></li>
-       <li><a href=""> <img src="img/fb-icon.svg" alt="Логотип Фэйсбука"> </a></li>
-       <li><a href=""> <img src="img/youtube.svg" alt="Логотип Ютуба"> </a></li>
+       <li>
+        <a href="" class="networks-icon">
+         <img src="img/twitter.svg" alt="Логотип Твиттера">
+        </a>
+       </li>
+       <li>
+        <a href="" class="networks-icon">
+         <img src="img/fb-icon.svg" alt="Логотип Фэйсбука">
+        </a>
+       </li>
+       <li>
+        <a href="" class="networks-icon">
+         <img src="img/youtube.svg" alt="Логотип Ютуба">
+        </a>
+      </li>
      </ul>
-
-     <p class="academy"> Website by </p>
-     <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" alt="Логотип Академии"> </a>    
+     
+     <div class="layout-dev">
+      <p class="dev-text"> Website by </p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-htmlacademy.svg" alt="Логотип Академии" width="40px" height="70px"> </a> 
+     </div>  
+    </div>
    </footer>
  </div>
  </body>
