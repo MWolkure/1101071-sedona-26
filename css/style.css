@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 body {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	font-size: 13px;
 	text-transform: uppercase;
@@ -23,50 +23,164 @@ body {
   background-color: #ffffff;
   box-sizing: border-box;
   width: 1200px;
-  /* сделать по центру страницы */
+  margin: 0 auto;
 }
-.main-navigation,
 .search-form-text {
 	font-weight: bold;
 	font-size: 14px;
 }
+.main-navigation {
+  font-weight: bold;
+  font-size: 14px;
+  position: relative; /*(пометка для себя) что бы position:absolute; отсчитывался отсюда,а не от сторон браузера*/
+  padding: 0 72px;
+}
 .nav-element {
+  width: 20%;
+}
+.nav-element a {
   color: black;
   font-weight: bold;
   text-decoration: none;
+  padding: / / / /;
 }
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
 }
+.btn {
+  text-decoration: none;
+  border: none;
+}
+.btn-choose-date {
+  font-weight: bold;
+  font-size: 21px; /*это, и text-transform: uppercase; не подействовали почему?*/
+  color: #ffffff;
+  background-color: #766357;
+  height: 86px; 
+  width: 568px;
+}
+.btn-search {
+  font-weight: bold;
+  font-size: 21px; /*это, и text-transform: uppercase; не подействовали почему?*/
+  color: #ffffff;
+  background-color: #81b3d2;
+  height: 58px; 
+  width: 458px;
+}
+.btn-details {
+  font-weight: bold;
+  font-size: 14px; 
+  color: #ffffff;
+  background-color: #81b3d2;
+  height: 27px; /* почему не действует?*/
+  width: 110px;
+}
+.btn-reservation {
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #766357;
+  height: 27px; /* почему не действует?*/
+  width: 142px;
+}
+.checkbox-btn {
+  background-color: transparent;
+}
+.filter-btn {
+  background-color: transparent;
+}
+.btn-show {
+  background-color: transparent;
+  border:;
+}
+.sorting-btn {
+  font-size: 12px;
+  color: #bfc4c9;
+  background-color: transparent;
+}
+.btn-up {
+  background-color: transparent;
+}
+.btn-down {
+  background-color: transparent;
+}
+.btn-calendar svg {
+  fill: #a9a9a9; 
+}
+.btn-plus,
+.btn-minus {
+  color: #a9a9a9;
+}
+.checkbox-name::before { 
+  content: url(../img/checkbox-off.svg);
+}
+.checkbox-name-checked::before {
+  content: url(../img/checkbox-on.svg);
+}
+.input-calendar input,
+.input-age input {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
  .logo {
-  height: 70px;
-  width: 102px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -70px;
+  height: auto;
+  width: 140px;
+}
+.logo img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.advantages {
+  margin: 0;
+  padding: 0;
 }
 .advantages-mini {
+  margin: 0;
+  padding: 0;
 	list-style: none;
   display: flex;
 }
 .layout-block-last {
   display: flex;
 }
-.layout-advantages-1 {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.layout-advantages-2 {
-  display: flex;
-}
 .advantages-title,
 .advantages-headline,
 .search-results-headline,
-.search-head-result {
+.search-head-result,
+.hashtag {
   font-weight: bold;
   font-size: 21px;
+
+}
+.layout-search-result img {
+  display: block;
+  width: 135px;
+  height: 90px;
+}
+.search-result {
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5; /*??? или как самую нижнюю границу сделать последнего блока?*/
+  border-collapse: collapse;
+}
+.layout-search-result {
+  display: flex;
 }
 .search-results-headline {
   text-decoration: none;
+  color: #000000;
 }
 .search-head {
   display: flex;
@@ -76,6 +190,10 @@ body {
 .layout-icons-up-down {
   display: flex;
 }
+.sorting-list {
+  margin: 0;
+  padding: 0;
+}
 /* это нужно, или нет?
 .results-list {
   list-style: none;
@@ -83,87 +201,93 @@ body {
   flex-direction: row-reverse;
 }
 */
-.search-result {
-  display: flex;
-}
 
-.btn {
-  text-decoration: none;
-}
-.btn-choose-date {
-  font-weight: bold;
-  font-size: 21px;
-  color: #ffffff;
-  background-color: #766357;
-}
-.btn-search {
-  font-weight: bold;
-  font-size: 21px;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-.btn-details {
-  font-weight: bold;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-.btn-reservation {
-  font-weight: bold;
-  font-size: 14px;
-  color: #ffffff;
-  background-color: #766357;
-}
 .search-result-rating {
   background-color: #f2f2f2;
 }
-.star {
-  background-image: url(../img/star.svg);
-  background-repeat: repeat-x;
+.result-list {
+  margin: 0;
+  padding: 0;
 }
-.star.star-4 {
-  width:80px;
+
+
+
+
+
+.star-4 {
+ /*width:90px;*/
+  background-image: 
+  url(../img/star.svg),
+  url(../img/star.svg),
+  url(../img/star.svg),
+  url(../img/star.svg);
+  background-repeat:
+  no-repeat, 
+  no-repeat,
+  no-repeat,
+  no-repeat; 
+  background-position: /*(пометка для себя)отсчитывается от границ блока layout-search-result*/
+  left 1078px top 29px,
+  left 1102px top 29px,
+  left 1127px top 29px,
+  left 1150px top 29px;
+
 }
-.star.star-3 {
-  width:60px;
+.star-3 {
+  background-image: 
+  url(../img/star.svg),
+  url(../img/star.svg),
+  url(../img/star.svg);
+  background-repeat:
+  no-repeat, 
+  no-repeat,
+  no-repeat; 
+  background-position: 
+  /*width:65px;*/
 }
-.star.star-2 {
-  width:40px;
+.star-2 {
+  background-image: 
+  url(../img/star.svg),
+  url(../img/star.svg);
+  background-repeat:
+  no-repeat, 
+  no-repeat;
+  /*width:41px;*/
 }
+
+
+
+
+
 .choose {
 	font-weight: bold;
 	font-size: 30px;
-}
-.advantages-block {
-	color: #ffffff;
 }
 .sorting {
 	font-size: 12px;
 }
 .sorting-list {
-  list-style:none; 
-}
-.sorting-btn {
-	font-size: 12px;
-	color: #bfc4c9;
+  list-style: none; 
 }
 .intro {
+  height: 508px;
+  max-width:100%;
 	background-color: #bcbcb8;
 	background-image: url("../img/background-1.jpg");
-  max-width:100%;
-  height:auto;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+  backgroun-size: 100% auto; 
+  margin: auto;
 }
 .intro-mask {
   background-image: url("../img/intro-mask.svg");
-  background-repeat:no-repeat;
-  background-position: center bottom;
-  /* убрать границу под белым */
+  background-repeat: no-repeat;
+  background-position: center bottom -2px; /*почему при задании точного размера высоты intro, маска стала посередине?*/
+  backgroun-size: 100% auto; 
 }
 .welcome {
+  display: block;
   height: 350px;
   width: 460px;
-  margin: 80px 370px auto; 
 }
 .advantages-icon {
 
@@ -178,9 +302,8 @@ body {
   background-image: url("../img/icon-3.svg");
 }
 .advantages-block {
+  color: #ffffff;
 	background-color: #81b3d2;
-  background-size: 400px 255px; /*почему не работает?? */
-
 }
 .advantages-block-last {
 	background-color: #eeeeee;
@@ -190,47 +313,136 @@ body {
   font-size: 16px;
   color: #ffffff;
 }
+
 .choose-housing {
+  max-width: 100%;
+  height: 217px;
   color:#ffffff;
   background-color: #666666;
   background-image: url("../img/background-2.jpg");
-  max-width: 100%;
-  height: auto;
   background-repeat: no-repeat;
+  margin: auto; 
+}
+.checkbox-list-1 {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+.checkbox-list-2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .layout-housing-main {
   display: flex;
+  /*padding: 31px 75px;*/
+  padding: 0; 
+
+  outline: 1px solid black;
 }
-.layout-housing-1,
+.layout-housing-1 {
+  display: block;
+  /*padding: 31px 115px 31px 75px;*/ 
+  justify-content: flex-start;
+
+  outline: 1px solid black;
+}
 .layout-housing-2 {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  padding: 0;
+  justify-content: flex-start;
+
+  outline: 1px solid black;
 }
 .layout-housing-3 {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  justify-content: flex-end; /*почему не встает по левому краю?*/
+
+  outline: 1px solid black;
 }
 .advantages-picture-1 {
-  background-repeat: no-repeat;                
+  background-repeat: no-repeat;
+  margin:auto;               
 }
 .advantages-picture-2 {
   background-repeat: no-repeat;
+  margin:auto; 
+}
+.advantages-picture-1 img,
+.advantages-picture-2 img {
+  display: block;
+  height: 256px; 
+  width: auto;
+}
+.layout-advantages-1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.layout-advantages-2 {
+  display: flex;
 }
 .networks-icon {
   background-color: #81b3d2;
-  background-size: 50px 50px; /* почему такие маленькие отображаются?*/
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.fb {
+  margin-left: 5px ;
+  margin-right: 5px;
+}
+.fb img {
+  margin-top: 15px;
+}
+.tw img,
+.youtube img {
+  margin-top: 17px;
+}
+.map {
+  /*position: absolute;
+  bottom: 0px;*/
 }
 .layout-footer {
+  /*background-color: rgba(255, 255, 255, 0.7);*/
   display: flex;
-  justify-content: space-around;
+  height: 120px;
+  width: auto;
+  padding: 36px 0;
+  
 }
 .networks {
+  margin: 0;
+  /*padding: 0;*/
   list-style: none; 
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 124px; /*почему не убирает верхние+нижние паддинги??*/
   
-  }
+
+  outline: 1px solid black;
+}
+.hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 132px;
+  
+
+  outline: 1px solid black;
+}
+
 .layout-dev {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  
+
+  outline: 1px solid black;
 }
 
 
