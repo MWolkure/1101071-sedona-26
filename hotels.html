@@ -12,10 +12,10 @@
   <header>
     <nav class="main-navigation">
      <ul class="site-navigation">
-      <li class="nav-element"><a href=""> Информация</a> </li>
-      <li class="nav-element"><a href=""> Фото и видео</a> </li>
-      <li class="nav-element"><a href=""> Карта штата</a> </li>
-      <li class="nav-element"><a href=""> Гостиницы </a></li>
+      <li class="nav-element nav-left"><a href=""> Информация</a> </li>
+      <li class="nav-element nav-left"><a href=""> Фото и видео</a> </li>
+      <li class="nav-element nav-right"><a href=""> Карта штата</a> </li>
+      <li class="nav-element nav-right"><a href=""> Гостиницы </a></li>
      </ul>  
     </nav>
     <a href="" class="logo"><img src="img/logo-sedona.svg" alt="Логотип Седоны"  width="140" height="70"></a>
@@ -23,7 +23,7 @@
 <main>
   <section class="choose-housing">
     <form class="layout-housing-main">
-     <div class="layout-housing-1">
+     <div class="layout-housing">
       <p class="housing-headline">Инфраструктура:</p>
       <ul class="checkbox-list-1">
        <li>
@@ -40,7 +40,7 @@
        </li> 
       </ul>     
      </div>
-     <div class="layout-housing-2">
+     <div class="layout-housing">
       <p class="housing-headline">Тип жилья:</p>
       <ul class="checkbox-list-2">
        <li>
@@ -57,7 +57,7 @@
        </li>
       </ul>     
      </div>   
-    <div class="layout-housing-3">
+    <div class="layout-housing-right">
       <p class="housing-headline">Стоимость в сутки (Р):</p>
       <p class="">от 0 </p>
       <p class="">до 3000 </p>
@@ -72,7 +72,7 @@
 
  <section class="search-head">
  <div class="layout-search-head">
-  <h2 class="search-head-result"> Найдено:3 </h2>
+  <h2 class="search-head-result"> Найдено: 3 </h2>
  </div>
   <div class="layout-sorting">
    <p class="sorting"> Сортировка:</p>
@@ -92,52 +92,58 @@
   <ul class="results-list">
    <li class="search-result">
     <div class="layout-search-result">
-     <img src="img/content-3.jpg" width="100%" alt="Гостиница от 4000 Р."> 
+     <div class="layout-search-pic">
+      <img src="img/content-3.jpg" width="100%" alt="Гостиница от 4000 Р."> 
+     </div>
      <div class="layout-search-text">
       <h2><a href="" class="search-results-headline">Amara resort and spa</a></h2> 
       <p>Гостиница </p>
       <p> от 4000 Р.</p>
-      <a class="btn btn-details" href="" > Подробнее</a> 
-      <a class="btn btn-reservation" href="" > Забронировать</a> 
+      <a class="btn btn-details" href=""> Подробнее</a> 
+      <a class="btn btn-reservation" href=""> Забронировать</a> 
      </div>
-    </div>
      <!--"Четыре звезды"> -->
-    <div class="star star-4">
-     <p class="search-result-rating"> Рейтинг: 8,5 </p>
+     <div class="layout-search-star star-4">
+      <p class="search-result-rating"> Рейтинг: 8,5 </p>
+     </div>
     </div>
    </li>
 
    <li class="search-result">
     <div class="layout-search-result">
-     <img src="img/content-4.jpg" width="100%" alt="Мотель от 3000 Р."> 
+     <div class="layout-search-pic">
+      <img src="img/content-4.jpg" width="100%" alt="Мотель от 3000 Р."> 
+     </div>
      <div class="layout-search-text">
       <h2><a href="" class="search-results-headline">Desert quail inn</a></h2>
       <p>Мотель</p>
       <p> от 3000 Р.</p>
-      <a class="btn btn-details" href="" > Подробнее</a> 
-      <a class="btn btn-reservation" href="" > Забронировать</a> 
+      <a class="btn btn-details" href=""> Подробнее</a> 
+      <a class="btn btn-reservation" href=""> Забронировать</a> 
      </div>
-    </div>
      <!--"Три звезды"> -->
-    <div class="star star-3">
-     <p class="search-result-rating">Рейтинг: 8,9</p>
+     <div class="layout-search-star star-3">
+      <p class="search-result-rating">Рейтинг: 8,9</p>
+     </div>
     </div>
    </li>
    
    <li class="search-result">
     <div class="layout-search-result">
-     <img src="img/content-5.jpg" width="100%" alt="Апартаменты от 2000 Р.">
+     <div class="layout-search-pic">
+      <img src="img/content-5.jpg" width="100%" alt="Апартаменты от 2000 Р.">
+     </div>
      <div class="layout-search-text">
       <h2><a href="" class="search-results-headline">Villas at poco diablo</a></h2>   
       <p>Апартаменты</p>
       <p> от 2000 Р.</p>
-      <a class="btn btn-details" href="" > Подробнее</a> 
-      <a class="btn btn-reservation" href="" > Забронировать</a> 
+      <a class="btn btn-details" href=""> Подробнее</a> 
+      <a class="btn btn-reservation" href=""> Забронировать</a> 
      </div>
-    </div>
      <!--"Две звезды"> -->
-    <div class="star star-2">
-     <p class="search-result-rating">Рейтинг: 9,2</p>
+     <div class="layout-search-star star-2">
+      <p class="search-result-rating">Рейтинг: 9,2</p>
+     </div>
     </div>
    </li>
  </ul>

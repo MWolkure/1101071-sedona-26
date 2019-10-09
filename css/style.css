@@ -32,23 +32,30 @@ body {
 .main-navigation {
   font-weight: bold;
   font-size: 14px;
-  position: relative; /*(пометка для себя) что бы position:absolute; отсчитывался отсюда,а не от сторон браузера*/
+  position: relative; /*(пометка для себя)задаем это, что бы position:absolute; отсчитывался отсюда,а не от сторон браузера*/
   padding: 0 72px;
 }
 .nav-element {
   width: 20%;
+  padding: 22px 0;
+}
+.nav-left {
+  text-align: left;
+}
+.nav-right {
+  text-align: right;
 }
 .nav-element a {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  padding: / / / /;
 }
 .site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 .btn {
   text-decoration: none;
@@ -56,7 +63,8 @@ body {
 }
 .btn-choose-date {
   font-weight: bold;
-  font-size: 21px; /*это, и text-transform: uppercase; не подействовали почему?*/
+  font-size: 21px;
+  text-transform: uppercase; 
   color: #ffffff;
   background-color: #766357;
   height: 86px; 
@@ -64,7 +72,8 @@ body {
 }
 .btn-search {
   font-weight: bold;
-  font-size: 21px; /*это, и text-transform: uppercase; не подействовали почему?*/
+  font-size: 21px; 
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
   height: 58px; 
@@ -75,16 +84,20 @@ body {
   font-size: 14px; 
   color: #ffffff;
   background-color: #81b3d2;
-  height: 27px; /* почему не действует?*/
-  width: 110px;
+  padding: 8px 16px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
 }
 .btn-reservation {
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
   background-color: #766357;
-  height: 27px; /* почему не действует?*/
-  width: 142px;
+  padding: 8px 16px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center; 
 }
 .checkbox-btn {
   background-color: transparent;
@@ -169,14 +182,12 @@ body {
   width: 135px;
   height: 90px;
 }
+.search-result:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
 .search-result {
   display: flex;
   border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5; /*??? или как самую нижнюю границу сделать последнего блока?*/
-  border-collapse: collapse;
-}
-.layout-search-result {
-  display: flex;
 }
 .search-results-headline {
   text-decoration: none;
@@ -184,31 +195,80 @@ body {
 }
 .search-head {
   display: flex;
+  padding: 0 75px;
+  max-width: 100%; 
+  margin: 0; 
 }
-.layout-sorting,
-.sorting-list,
+.layout-search-head h2,
+.layout-sorting p {
+  margin: 0;
+}
+ .sorting-list li button,
+ .layout-icons-up-down button { /* задать в самих классах кнопок? */
+  padding: 0;
+}
+.layout-search-head {
+ display: block;
+ padding: 31px 50px 33px 0;
+}
+.layout-sorting {
+  display: flex;
+  width: 353px;
+  padding: 31px 0 33px 0;
+}
 .layout-icons-up-down {
   display: flex;
+  padding: 31px 0 33px 0;
+  margin-left: auto; /*????????*/
 }
 .sorting-list {
   margin: 0;
   padding: 0;
-}
-/* это нужно, или нет?
-.results-list {
   list-style: none;
   display: flex;
-  flex-direction: row-reverse;
 }
-*/
-
 .search-result-rating {
   background-color: #f2f2f2;
 }
-.result-list {
+.results-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
+.layout-search-result {
+  display: flex;
+  padding: 0 75px;
+  max-width: 100%; 
+  margin: 0; 
+}
+.layout-search-pic {
+  display: block;
+  box-sizing: border-box;
+  padding: 25px 30px 30px 0;
+  vertical-align: middle;
+}
+.layout-search-text {
+  display: block;
+  box-sizing: border-box;
+  width: 780px;
+  padding: 25px 0 30px 0;
+
+}
+.layout-search-star {
+  display: block;
+  box-sizing: border-box;
+  width: 110px;
+  padding: 25px 0 30px 0;
+
+}
+.layout-search-pic h2,
+.layout-search-text h2,
+.layout-search-star h2 {
+  margin-top: 0;
+}
+
+
+
 
 
 
@@ -271,7 +331,7 @@ body {
 }
 .intro {
   height: 508px;
-  max-width:100%;
+  max-width: 100%;
 	background-color: #bcbcb8;
 	background-image: url("../img/background-1.jpg");
   background-repeat: no-repeat;
@@ -279,9 +339,11 @@ body {
   margin: auto;
 }
 .intro-mask {
+  height: 508px;
+  max-width: 100%;
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
-  background-position: center bottom -2px; /*почему при задании точного размера высоты intro, маска стала посередине?*/
+  background-position: center bottom -2px; 
   backgroun-size: 100% auto; 
 }
 .welcome {
@@ -336,29 +398,23 @@ body {
 .layout-housing-main {
   display: flex;
   /*padding: 31px 75px;*/
-  padding: 0; 
+  padding: 0 75px; 
 
   outline: 1px solid black;
 }
-.layout-housing-1 {
+.layout-housing {
   display: block;
   /*padding: 31px 115px 31px 75px;*/ 
-  justify-content: flex-start;
+  width: 240px;
 
   outline: 1px solid black;
 }
-.layout-housing-2 {
-  display: block;
-  padding: 0;
-  justify-content: flex-start;
-
-  outline: 1px solid black;
-}
-.layout-housing-3 {
+.layout-housing-right {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  justify-content: flex-end; /*почему не встает по левому краю?*/
+  width: 528px;
+  margin-left: auto;
+   /*если не padding-left чтоб подвинуть, то как?*/
 
   outline: 1px solid black;
 }
@@ -403,46 +459,38 @@ body {
 }
 .map {
   /*position: absolute;
-  bottom: 0px;*/
+  bottom: 0px; - почему она переезжает наверх страницы?*/
 }
 .layout-footer {
-  /*background-color: rgba(255, 255, 255, 0.7);*/
+  /*background-color: rgba(255, 255, 255, 0.7); - почему не работает?*/
   display: flex;
+  box-sizing: border-box;
   height: 120px;
   width: auto;
-  padding: 36px 0;
-  
+  padding: 36px 0;*/
 }
 .networks {
   margin: 0;
-  /*padding: 0;*/
   list-style: none; 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 124px; /*почему не убирает верхние+нижние паддинги??*/
-  
-
-  outline: 1px solid black;
+  padding: 0 124px; 
 }
 .hashtag {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 132px;
-  
-
-  outline: 1px solid black;
 }
 
 .layout-dev {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 100px;
-  
-
-  outline: 1px solid black;
 }
 
 
