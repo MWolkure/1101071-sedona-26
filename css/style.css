@@ -24,6 +24,7 @@ body {
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .search-form-text {
 	font-weight: bold;
@@ -36,7 +37,7 @@ body {
   padding: 0 72px;
 }
 .nav-element {
-  width: 20%;
+  width: 240px;
   padding: 22px 0;
 }
 .nav-left {
@@ -50,12 +51,14 @@ body {
   font-weight: bold;
   text-decoration: none;
 }
+.nav-mar {
+  margin-left: auto;
+}
 .site-navigation {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
 }
 .btn {
   text-decoration: none;
@@ -140,7 +143,6 @@ body {
   font-weight: bold;
   font-size: 14px;
 }
-
  .logo {
   display: block;
   position: absolute;
@@ -177,7 +179,7 @@ body {
   font-size: 21px;
 
 }
-.layout-search-result img {
+.layout-search-pic img {
   display: block;
   width: 135px;
   height: 90px;
@@ -188,14 +190,13 @@ body {
 .search-result {
   display: flex;
   border-top: 1px solid #e5e5e5;
-}
-.search-results-headline {
-  text-decoration: none;
-  color: #000000;
+  padding: 0 72px;
+  max-width: 100%; 
+  margin: 0; 
 }
 .search-head {
   display: flex;
-  padding: 0 75px;
+  padding: 0 72px;
   max-width: 100%; 
   margin: 0; 
 }
@@ -219,7 +220,7 @@ body {
 .layout-icons-up-down {
   display: flex;
   padding: 31px 0 33px 0;
-  margin-left: auto; /*????????*/
+  margin-left: auto; 
 }
 .sorting-list {
   margin: 0;
@@ -234,12 +235,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-.layout-search-result {
-  display: flex;
-  padding: 0 75px;
-  max-width: 100%; 
-  margin: 0; 
 }
 .layout-search-pic {
   display: block;
@@ -266,7 +261,10 @@ body {
 .layout-search-star h2 {
   margin-top: 0;
 }
-
+.layout-search-text .search-results-headline {
+  text-decoration: none;
+  color: #000000;
+}
 
 
 
@@ -335,7 +333,7 @@ body {
 	background-color: #bcbcb8;
 	background-image: url("../img/background-1.jpg");
   background-repeat: no-repeat;
-  backgroun-size: 100% auto; 
+  background-size: 100% auto; 
   margin: auto;
 }
 .intro-mask {
@@ -344,7 +342,7 @@ body {
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
   background-position: center bottom -2px; 
-  backgroun-size: 100% auto; 
+  background-size: 100% auto; 
 }
 .welcome {
   display: block;
@@ -366,6 +364,7 @@ body {
 .advantages-block {
   color: #ffffff;
 	background-color: #81b3d2;
+  width: 400px;
 }
 .advantages-block-last {
 	background-color: #eeeeee;
@@ -375,7 +374,6 @@ body {
   font-size: 16px;
   color: #ffffff;
 }
-
 .choose-housing {
   max-width: 100%;
   height: 217px;
@@ -397,14 +395,14 @@ body {
 }
 .layout-housing-main {
   display: flex;
-  /*padding: 31px 75px;*/
-  padding: 0 75px; 
+  /*padding: 31px 72px;*/
+  padding: 0 72px; 
 
   outline: 1px solid black;
 }
 .layout-housing {
   display: block;
-  /*padding: 31px 115px 31px 75px;*/ 
+  /*padding: 31px 115px 31px 72px;*/ 
   width: 240px;
 
   outline: 1px solid black;
@@ -412,19 +410,18 @@ body {
 .layout-housing-right {
   display: flex;
   flex-direction: column;
-  width: 528px;
+  width: 325px;
   margin-left: auto;
-   /*если не padding-left чтоб подвинуть, то как?*/
 
   outline: 1px solid black;
 }
 .advantages-picture-1 {
   background-repeat: no-repeat;
-  margin:auto;               
+  width: 800px;               
 }
 .advantages-picture-2 {
   background-repeat: no-repeat;
-  margin:auto; 
+  width: 800px;  
 }
 .advantages-picture-1 img,
 .advantages-picture-2 img {
@@ -457,17 +454,18 @@ body {
 .youtube img {
   margin-top: 17px;
 }
-.map {
-  /*position: absolute;
-  bottom: 0px; - почему она переезжает наверх страницы?*/
-}
+
 .layout-footer {
-  /*background-color: rgba(255, 255, 255, 0.7); - почему не работает?*/
   display: flex;
   box-sizing: border-box;
   height: 120px;
   width: auto;
   padding: 36px 0;*/
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7); 
 }
 .networks {
   margin: 0;
@@ -475,22 +473,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 124px; 
+  width: 400px;
 }
 .hashtag {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 132px;
+  width: 400px;
 }
-
 .layout-dev {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  width: 400px;
 }
 
 
