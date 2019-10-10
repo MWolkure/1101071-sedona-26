@@ -436,39 +436,36 @@ body {
 .layout-advantages-2 {
   display: flex;
 }
+.networks-row {
+  margin: 3px;
+}
 .networks-icon {
   background-color: #81b3d2;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
   text-align: center;
 }
-.fb {
-  margin-left: 5px ;
-  margin-right: 5px;
+.layout-footer.main-footer {
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.fb img {
-  margin-top: 15px;
-}
-.tw img,
-.youtube img {
-  margin-top: 17px;
-}
-
 .layout-footer {
   display: flex;
   box-sizing: border-box;
   height: 120px;
   width: auto;
-  padding: 36px 0;*/
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.7); 
+  padding: 36px 0;
+  background-color: rgba(255, 255, 255, 0.9); 
 }
 .networks {
   margin: 0;
+  padding: 0;
   list-style: none; 
   display: flex;
   justify-content: center;
