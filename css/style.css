@@ -248,9 +248,6 @@ body {
   list-style: none;
   display: flex;
 }
-.search-result-rating {
-  background-color: #f2f2f2;
-}
 .results-list {
   margin: 0;
   padding: 0;
@@ -269,13 +266,6 @@ body {
   padding: 25px 0 30px 0;
 
 }
-.layout-search-star {
-  display: block;
-  box-sizing: border-box;
-  width: 110px;
-  padding: 25px 0 30px 0;
-
-}
 .layout-search-pic h2,
 .layout-search-text h2,
 .layout-search-star h2 {
@@ -285,52 +275,53 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.layout-hotel {
+  display: inline-block;
+}
+.layout-price {
+  display: inline-block;
+}
 
 
 
 
 
+.layout-search-star {
+  display: block;
+  box-sizing: border-box;
+  width: 110px;
+  padding: 25px 0 30px 0;
+  position: relative;
+}
 
 
+.star-icon {
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+}
 .star-4 {
  /*width:90px;*/
-  background-image: 
-  url(../img/star.svg),
-  url(../img/star.svg),
-  url(../img/star.svg),
-  url(../img/star.svg);
-  background-repeat:
-  no-repeat, 
-  no-repeat,
-  no-repeat,
-  no-repeat; 
-  background-position: /*(пометка для себя)отсчитывается от границ блока layout-search-result*/
-  left 1078px top 29px,
-  left 1102px top 29px,
-  left 1127px top 29px,
-  left 1150px top 29px;
-
+ display: flex;
 }
 .star-3 {
-  background-image: 
-  url(../img/star.svg),
-  url(../img/star.svg),
-  url(../img/star.svg);
-  background-repeat:
-  no-repeat, 
-  no-repeat,
-  no-repeat; 
-  background-position: 
   /*width:65px;*/
+  display: flex;
 }
 .star-2 {
-  background-image: 
-  url(../img/star.svg),
-  url(../img/star.svg);
-  background-repeat:
-  no-repeat, 
-  no-repeat;
   /*width:41px;*/
+  display: flex;
+}
+.search-result-rating {
+  margin: 0;
+  /*background-color: #f2f2f2;
+  position: absolute;
+  bottom: 30px;
+  padding: 5px 16px; - почему не работает?*/
+}
+.search-result-rating-block {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 30px;
 }
 
 
