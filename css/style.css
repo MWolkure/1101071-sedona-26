@@ -25,7 +25,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  box-shadow: 0 0 20px 10px #dbdbdb;
+  box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
 }
 .main-navigation {
   font-weight: bold;
@@ -33,9 +33,20 @@ body {
   position: relative; 
   padding: 0 72px;
 }
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
 .nav-element {
-  width: 240px;
-  padding: 22px 0;
+  width: 243px;
+  padding: 20px 0;
 }
 .nav-element a:hover {
   color: #81b3d2;
@@ -55,7 +66,7 @@ body {
   text-decoration: none;
 }
 .nav-mar {
-  margin-left: auto;
+  margin-left: 85px;
 }
 .site-navigation {
   margin: 0;
@@ -98,7 +109,7 @@ body {
   color: #ffffff;
   background-color: #81b3d2;
   height: 58px; 
-  width: 458px;
+  width: 100%;
   margin-top: 24px;
   padding: 0;
 }
@@ -173,9 +184,12 @@ body {
 }
 .btn-calendar:active svg {
   fill: #81b3d2;
+  outline-color: #f2f2f2; /*не работает почему??*/
+  /*border:none; - и это тоже не убирает синюю рамку - почему??*/ 
 }
 .btn-calendar:active { 
-
+  outline-color: #f2f2f2;/* и так тоже никак :) */
+  /*border: none;*/  
 }
 .btn-calendar {
   background-color: #f2f2f2;
@@ -210,21 +224,12 @@ body {
 .checkbox-name {
   position: relative;
 } 
-.checkbox-list-1 .checkbox-name {
-  padding-left: 27px;
-}
-.checkbox-list-2 .checkbox-name {
-  padding-left: 42px;
+
+.checkbox-list .checkbox-name {
+  padding-left: 41px;
 }
 .checkbox-name::before { 
   content: url(../img/checkbox-off.svg);
-}
-.checkbox-list-1 .checkbox-name::before {
-  position: absolute;
-  top: -4px;
-  left: -16px;
-}
-.checkbox-list-2 .checkbox-name::before {
   position: absolute;
   top: -4px;
   left: 0;
@@ -232,15 +237,10 @@ body {
 .checkbox-btn:checked ~ .checkbox-name::before {
   content: url(../img/checkbox-on.svg);
 }
-.chbx-1-head {
-  margin-bottom: 28px;
+.chbx-head {
+  margin-bottom: 30px;
 }
-.chbx-2-head {
-  margin-left: 14px;
-  margin-bottom: 28px;
-}
-.checkbox-list-1 li,
-.checkbox-list-2 li {
+.checkbox-list li {
   padding-bottom: 30px;
 }
 .btn-show {
@@ -252,7 +252,7 @@ body {
   text-transform: uppercase;
   width: 137px;
   height: 36px;
-  margin-left: 95px;
+  margin-left: 85px;
 }
 .btn-show:hover {
   background-color: #ffffff;
@@ -263,14 +263,14 @@ body {
   height: 34px;
   width: 318px;
 }
-.palka {
+.scale-opacity {
   content: "";
   height: 2px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0,3);
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
 }
-.snova-palka {
+.scale-color {
   content: "";
   height: 2px;
   width: 80%;
@@ -359,7 +359,7 @@ body {
   width: 568px;
 }
 .search-form {
- /* display: none;*/
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -400,7 +400,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 23px;
 }
 .choose-input {
   text-align: center;
@@ -411,7 +411,7 @@ body {
 }
 .choose-wrapper {
   padding-bottom: 50px;
-  padding-top: 57px;
+  padding-top: 50px;
 }
 .input-calendar input,
 .input-age input {
@@ -444,7 +444,7 @@ body {
 }
 .input-calendar input:focus {
   background-color: #ffffff;
-  outline: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;  /*вот тут аутлайн работает, и при фокусе рамки синего цвета дефолтной нет,она серая. а когда то же пытаюсь делать для .btn-calendar:active - не работает*/
 }
 .input-calendar 
 .advantages-title,
@@ -507,7 +507,7 @@ body {
 .layout-search-pic {
   display: block;
   box-sizing: border-box;
-  padding: 25px 30px 30px 0;
+  padding: 27px 30px 32px 0;
   vertical-align: middle;
 
 }
@@ -515,13 +515,11 @@ body {
   display: block;
   box-sizing: border-box;
   width: 780px;
-  padding: 27px 0 25px 0;
+  padding: 27px 0 32px 0;
 
 }
-.layout-search-pic h2,
-.layout-search-text h2,
-.layout-search-star h2 {
-  margin-top: -5px;
+.layout-search-text h2 {
+  margin-top: -3px;
   margin-bottom: 9px;
   letter-spacing: 0.3px;
 }
@@ -552,7 +550,7 @@ body {
   box-sizing: border-box;
   align-items: flex-end;
   width: 110px;
-  padding: 25px 0 30px 0;
+  padding: 27px 0 32px 0;
 }
 .star-icon {
   background-image: url(../img/star.svg);
@@ -618,8 +616,13 @@ body {
   background-size: 100% auto; 
   margin: auto;
   position: relative;
+  padding-top: 76px;
+  padding-bottom: 80px;
+  min-height: auto;
+  box-sizing: border-box;
 }
-.intro-mask {
+.intro::before {
+  content: "";
   height: 57px;
   width: 1200px;
   background-image: url("../img/intro-mask.svg");
@@ -632,7 +635,8 @@ body {
   display: block;
   height: 350px;
   width: 460px;
-  padding: 76px 370px 80px 370px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .layout-advantages {
   width: 400px;
@@ -641,23 +645,26 @@ body {
   padding-top: 60px;
   box-sizing: border-box;
 }
+.adv-icon-3 {
+  padding-top: 56px;
+}
 .icon-1 {
   width: 75px;
   height: 72px;
-  margin-bottom: 29px;
+  margin-bottom: 22px;
   /*margin: 60px 162px 29px 162px;*/
 }
 .icon-2 {
   width: 74px;
   height: 70px;
  /* margin: 60px 159px 29px 164px;*/
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 .icon-3 {
   width: 64px;
   height: 76px;
   /*margin: 60px 168px 29px 172px;*/
-  margin-bottom: 29px;
+  margin-bottom: 22px;
 }
 .advantages {
   margin: 0;
@@ -665,13 +672,15 @@ body {
   list-style: none;
   line-height: 21px;
   counter-reset: advantages-block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .advantages-block::after  {
   content: "— №"counter(advantages-block)" —";
   counter-increment: advantages-block;
   position: absolute;
-  bottom: 127px;
-  right: 175px;
+  bottom: 123px;
+  right: 172px;
 }
 .advantages-block {
   color: #ffffff;
@@ -709,22 +718,28 @@ body {
 }
 .adv-block-headline {
   width: 150px;
-  margin: 0 125px 70px 125px;
+  margin: 0 auto 66px 125px;
 }
 .adv-title-head {
-  height: 216px;
+  min-height: auto;
   text-align: center;
+  padding-bottom: 52px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+}
+.adv-title-head p {
+  margin: 0;
 }
 .advantages-title {
   width: 500px;
   padding-top: 60px;
   font-size: 21px;
   font-weight: bold;
-  margin: 0 auto 38px 350px;
+  margin: 0 auto 27px 350px;
 }
 .adv-mini {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 .advantages-mini-text {
   margin: 0;
@@ -746,13 +761,8 @@ body {
   background-repeat: no-repeat;
   margin: auto; 
 }
-.checkbox-list-1 {
+.checkbox-list {
   list-style:none;
-  margin: 0;
-  padding: 0;
-}
-.checkbox-list-2 {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -765,12 +775,14 @@ body {
   display: block;
   width: 240px;
 }
+.housing-middle {
+  margin-left: 30px;
+}
 .layout-housing-right {
   display: flex;
   flex-direction: column;
   width: 325px;
-  margin-left: auto;
-  padding-left: 10px;
+  margin-left: 260px;
 }
 .advantages-picture-1 {
   background-repeat: no-repeat;
@@ -827,9 +839,10 @@ body {
 .layout-footer {
   display: flex;
   box-sizing: border-box;
-  height: 120px;
+  /*height: 120px;*/
   width: auto;
-  padding: 36px 0;
+  padding-top: 33px;
+  padding-bottom: 38px;
   background-color: rgba(255, 255, 255, 0.9); 
 }
 .networks {
