@@ -184,12 +184,10 @@ body {
 }
 .btn-calendar:active svg {
   fill: #81b3d2;
-  outline-color: #f2f2f2; /*не работает почему??*/
-  /*border:none; - и это тоже не убирает синюю рамку - почему??*/ 
 }
-.btn-calendar:active { 
-  outline-color: #f2f2f2;/* и так тоже никак :) */
-  /*border: none;*/  
+.btn-calendar:focus { 
+  outline: none;
+    /*outline-color: 1px solid #f2f2f2; */
 }
 .btn-calendar {
   background-color: #f2f2f2;
@@ -217,6 +215,10 @@ body {
 .btn-minus:active {
   color: #81b3d2;
 }
+.btn-plus:focus,
+.btn-minus:focus {
+  outline: none;
+}
 .checkbox-btn {
   background-color: transparent;
   display: none;
@@ -224,7 +226,6 @@ body {
 .checkbox-name {
   position: relative;
 } 
-
 .checkbox-list .checkbox-name {
   padding-left: 41px;
 }
@@ -359,7 +360,7 @@ body {
   width: 568px;
 }
 .search-form {
-  display: none;
+  /*display: none;*/
   position: absolute;
   top: 100%;
   left: 0;
@@ -375,23 +376,14 @@ body {
   align-items: center;
 }
 .search-form-row label {
-  /*width: 112px;*/
+  width: 112px;
+  text-align: start;
+  letter-spacing: 0.3px;
 }
-.lbl-middle {
-  width: 118px;
-}
-.lbl-middle-text {
-  margin-left: 53px;        
-  width: 38px;              
-}
-.lbl-adults-text{
-  padding-right: 40px;
-}
-.lbl-date-2-text{
-  padding-right: 20px;
-}
-.lbl-date-1-text {
-  padding-right: 22px;
+.search-form-row .lbl-middle {
+  width: 91px;
+  text-align: right;
+  padding-right: 27px;
 }
 .search-form-number {
    display: flex;
@@ -444,7 +436,7 @@ body {
 }
 .input-calendar input:focus {
   background-color: #ffffff;
-  outline: 2px solid #e5e5e5;  /*вот тут аутлайн работает, и при фокусе рамки синего цвета дефолтной нет,она серая. а когда то же пытаюсь делать для .btn-calendar:active - не работает*/
+  outline: 2px solid #e5e5e5;  
 }
 .input-calendar 
 .advantages-title,
@@ -640,9 +632,8 @@ body {
 }
 .layout-advantages {
   width: 400px;
-  height: 330px;
   text-align: center;
-  padding-top: 60px;
+  padding: 60px 50px 83px 50px;
   box-sizing: border-box;
 }
 .adv-icon-3 {
@@ -675,12 +666,10 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.advantages-block::after  {
+.advantages-block::before {
   content: "— №"counter(advantages-block)" —";
   counter-increment: advantages-block;
-  position: absolute;
-  bottom: 123px;
-  right: 172px;
+  margin-bottom: 17px;
 }
 .advantages-block {
   color: #ffffff;
@@ -689,6 +678,10 @@ body {
   text-align: center;
   position: relative;
   padding-top: 46px;
+  padding-bottom: 63px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .advantages-mini {
   margin: 0;
@@ -699,7 +692,6 @@ body {
 .advantages-block.block-last {
 	background-color: #eeeeee;
   width: 400px;
-  height: 256px;
   text-align: center;
   color: #000000;
   box-sizing: border-box;
@@ -718,10 +710,10 @@ body {
 }
 .adv-block-headline {
   width: 150px;
-  margin: 0 auto 66px 125px;
+  margin: 0 auto 25px auto;
+  order: -1;
 }
 .adv-title-head {
-  min-height: auto;
   text-align: center;
   padding-bottom: 52px;
   line-height: 26px;
@@ -735,7 +727,7 @@ body {
   padding-top: 60px;
   font-size: 21px;
   font-weight: bold;
-  margin: 0 auto 27px 350px;
+  margin: 0 auto 27px auto;
 }
 .adv-mini {
   margin-top: 0;
@@ -744,7 +736,6 @@ body {
 .advantages-mini-text {
   margin: 0;
   width: 300px;
-  margin-left: 50px;
 }
 .housing-headline {
   font-weight: bold;
